@@ -24,3 +24,10 @@ resultado,error_muestreo = intervalo_confianza_media(x_bar=92, sigma=3, n=6, con
 print(f"Intervalo de confianza: {resultado}")
 print(f"Error de muestreo: {error_muestreo}")
 
+#uso cuando pide tamaño de n que el error 
+sigma = 3
+error_deseado = 2.4004/2 #aca ingreso el que me pida ej, /2 si me pide la mitad del error anterior
+confianza = 0.95
+
+n_requerido = calcular_tamano_muestra(sigma, error_deseado, confianza)
+print(f"Tamaño de muestra necesario: {n_requerido}")
